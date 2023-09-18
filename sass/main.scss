@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&display=swap');
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  // padding: 0 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Noto Sans";
+}
+
+// header start
+
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #24292F;
+
+  .header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .header-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      a {
+        color: #fff;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+      }
+    }
+
+    .header-form {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      .header-search {
+        display: flex;
+        width: 240px;
+        height: 38px;
+        padding: 9px 9px 9px 13px;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 12px;
+        flex-shrink: 0;
+        border-radius: 6px;
+        border: 1px solid #57606A;
+        background: #24292F;
+        font-family: "Noto Sans";
+        color: #8C959F;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      .header-sign-in {
+        color: #FFF;
+        font-family: 'Noto Sans';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+      }
+
+      .header-sign-up {
+        color: #FFF;
+        font-family: 'Noto Sans';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        display: flex;
+        padding: 5px 9.266px 5px 9px;
+        align-items: flex-start;
+        border-radius: 6px;
+        border: 1px solid #D0D7DE;
+      }
+
+
+    }
+  }
+}
+
+// header end
+
+// hero start
+
+.hero {
+  background-color: #fff;
+
+  .hero-header {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background: rgba(255, 255, 255, 0.00);
+    box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.03), 0px 3px 2px 0px rgba(0, 0, 0, 0.04), 0px 0px 0px 1px rgba(53, 72, 91, 0.14);
+
+    @media (max-width:1115px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero-header-title {
+      margin-left: 117px;
+      color: #24292F;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 32px;
+      margin-right: 32px;
+
+      @media (max-width:1115px) {
+        margin-left: 0;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+    }
+
+    .hero-header-list {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+
+      @media (max-width:1115px) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .hero-header-link {
+        color: #24292F;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+
+        &:hover {
+          color: #3498Db;
+        }
+      }
+    }
+  }
+
+  .hero-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    
+
+    .hero-main {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+
+      .hero-row {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+
+        @media(max-width:1320px) {
+          gap: 20px;
+        }
+
+        @media(max-width:1320px) {
+          grid-template-columns: repeat(3, 1fr);
+
+        }
+        @media(max-width:842px) {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 40px;
+        }
+        @media(max-width:600px) {
+          grid-template-columns: repeat(1, 1fr);
+          gap: 40px;
+        }
+
+        .github-card {
+          width: 300px;
+          height: 430px;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          box-shadow: 1px -1px 22px 10px rgba(0, 0, 0, 0.17);
+          border-radius: 20px;
+
+          @media (max-width:1275px) {
+            width: 260px;
+          }
+
+          .user-image {
+            padding: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: #24292F;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+
+            img {
+              width: 150px;
+              height: 150px;
+              border-radius: 50%;
+            }
+          }
+
+          .user-name {
+            margin-top: 10px;
+            margin-bottom: 10px;
+          }
+
+          .user-username {
+            font-size: 15px;
+            color: #8BC34A;
+          }
+
+          .user-info {
+            padding: 10px;
+            text-align: center;
+            font-size: 15px;
+            margin-bottom: 30px;
+            color: #24292F
+          }
+
+          .user-followings {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #24292F;
+            border-radius: 10px;
+            padding: 10px;
+            width: 280px;
+            gap: 30px;
+
+            @media (max-width:1275px) {
+              width: 240px;
+            }
+
+            div {
+              &:first-child {
+                padding-right: 40px;
+                border-right: 2px solid #24292F;
+              }
+            }
+
+            .user-followings-subcards {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+
+              span {
+                color: #8BC34A;
+              }
+
+              p {
+                color: #3498Db
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.pagination-wrapper{
+  padding: 10px;
+}
+
+.pagination{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  li{
+    button{
+      background-color: #24292F;
+      color:#fff;
+      padding:5px 20px;
+      border-radius:7px;
+      cursor:pointer;
+    }
+  }
+}
